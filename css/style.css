@@ -63,29 +63,25 @@ body{
         background-color: rgb(247, 247, 119);
     }
     .container{
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
     }
     .section_sign-up{
-        background-color: rgb(214,233,254);
-        height: 100px;
-        width: 50%;
+        grid-row-start:1 ;
+        grid-column-start: 1;
     }
     .section_feature-1{
-        background-color: rgb(245,207,142);
-        height: 100px;
-        width: 50%;
+        grid-row-start:1 ;
+        grid-column-start: 2;
     }
     .section_feature-2{
-        background-color: rgb(240,154,157);
-        height: 100px;
-        width: 50%;
+        grid-row-start:2 ;
+        grid-column-start: 1 ;
     }
     .section_feature-3{
-        background-color: rgb(200,198,250);
-        height: 100px;
-        width: 50%;
+        grid-row-start:2 ;
+        grid-column-start:2 ;
     }
 }
 @media screen and (min-width: 961px){
@@ -101,28 +97,25 @@ body{
         flex-direction: column-reverse;
     }
     .container{
-        display: flex;
-        flex-direction: row;     
-        flex-wrap: wrap-reverse;
+        display: grid;
+        grid-template-columns: 33,33% 33,33% 33,33%;
+        grid-template-rows: 50% 50%;
     }
     .section_sign-up{
-        background-color: rgb(214,233,254);
-        height: 100px;
-        width: 100%;
+        grid-row-start:2 ;
+        grid-column-start: 1;
+        grid-column-end:4;
     }
     .section_feature-1{
-        background-color: rgb(245,207,142);
-        height: 200px;
-        width: 33.33%;
+        grid-row-start:1 ;
+        grid-column-start: 1;
     }
     .section_feature-2{
-        background-color: rgb(240,154,157);
-        height: 200px;
-        width: 33.33%;
+        grid-row-start:1 ;
+        grid-column-start: 3 ;
     }
     .section_feature-3{
-        background-color: rgb(200,198,250);
-        height: 200px;
-        width: 33.33%;
-    }   
+        grid-row-start:1 ;
+        grid-column-start:2 ;
+    }
 }
